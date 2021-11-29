@@ -13,3 +13,4 @@ This is a solution to the [3-column preview card component challenge on Frontend
 For some unknown reason for me border-radius could not be applied. It looks fine when viewed on desktop, but on mobile...
 
 ## Live preview
+https://naiiiden.github.io/3-column-preview-card/
