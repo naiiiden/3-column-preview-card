@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--very-light-gray);
+    margin: 1%;
+    font-size: 15px;
+}
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%)
+}
+
+img{
+    width: 64px;
+}
+
+h1{
+color:var(--very-light-gray);
+font-family: 'Big Shoulders Display', cursive;
+}
+
+button{
+    width: 125px;
+    border-radius: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--transparent-white);
+    border: none;
+    padding: 10px;
+}
+
+/*button colors for each container*/
+.sedans button{
+    color:hsl(31, 77%, 52%);
+}
+.suvs button{
+    color: var(--dark-cyan);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*container settings for sedans,SUVs, luxury*/
+.sedans, .suvs, .luxury{
+    width: 275px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 40px;
+}
+
+p{
+    color:var(--transparent-white); /* color for main text*/
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/*background colors*/
+.sedans{
+    background-color: var(--bright-orange);
+}
+.suvs{
+    background-color: var(--dark-cyan);
+}
+.luxury{
+    background-color: var(--very-dark-cyan);
+}
+
+.sedans{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.luxury{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+@media screen and (min-width: 1000px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+}
+
+/*this stays at the bottom*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
